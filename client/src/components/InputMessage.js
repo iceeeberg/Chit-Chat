@@ -6,7 +6,12 @@ const InputMessage = () => {
   return (
     <Fragment>
       <form>
-        <input placeholder="Send Message..." type="text" onChange={(e) => setMessage(e.target.value)} />
+        <input
+          placeholder="Send Message..."
+          type="text"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+        />
         <button type="submit">Send</button>
       </form>
     </Fragment>
