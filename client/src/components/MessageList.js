@@ -1,14 +1,15 @@
 import { Fragment } from "react"
 
+
 const MessageList = (props) => {
   return (
     <Fragment>
-      <h1>Dummy GroupChat</h1>
+      <h1 class="text-center">Dummy GroupChat</h1>
       <ul>
         {props.messages.map(msg =>(
-          <li key={msg.id}>
-            <span>{msg.message}</span>
-            </li>
+          <p key={msg.id}>
+            <span >User: {msg.message}</span>
+            </p>
         ))}
       </ul>
     </Fragment>
