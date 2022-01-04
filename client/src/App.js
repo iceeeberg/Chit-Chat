@@ -1,11 +1,11 @@
 import './App.css';
 import { Fragment } from 'react';
-import Chats from './components/Chats';
+import Messages from './components/Messages';
 
 function App() {
   return (
     <Fragment>
-      <Chats/>
+      <Messages/>
     </Fragment>
   );
 }
