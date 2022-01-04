@@ -1,11 +1,11 @@
 import './App.css';
 import { Fragment } from 'react';
-import InputMessage from './components/InputMessage';
+import Chats from './components/Chats';
 
 function App() {
   return (
     <Fragment>
-      <InputMessage/>
+      <Chats/>
     </Fragment>
   );
 }

@@ -1,18 +1,25 @@
 import React, { Fragment, useState } from "react";
 
-const InputMessage = () => {
+const InputMessage = (props) => {
   const [message, setMessage] = useState("");
+
+  const submitMessageHandler = e => {
+    e.preventDefault();
+    props.onAddMessage({message: message});
+    setMessage('');
+  }
 
   return (
     <Fragment>
-      <form>
+      <form onSubmit={submitMessageHandler}>
         <input
           placeholder="Send Message..."
+          id="message"
           type="text"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
-        <button type="submit">Send</button>
+        <button onClick={submitMessageHandler} type="submit">Send</button>
       </form>
     </Fragment>
   );
