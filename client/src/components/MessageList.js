@@ -1,19 +1,25 @@
-import { Fragment } from "react"
-
+import { Fragment } from "react";
+import { ChatData } from "./ChatData";
 
 const MessageList = (props) => {
   return (
     <Fragment>
-      <h1 class="text-center">Dummy GroupChat</h1>
       <ul>
-        {props.messages.map(msg =>(
+        {props.messages.map((msg) => (
           <p key={msg.id}>
-            <span >User: {msg.message}</span>
-            </p>
+            <span>
+              {ChatData.map((val) => (
+                <p  key={val}>
+                  {" "}
+                  {val.name}: {msg.message}
+                </p>
+              ))}
+            </span>
+          </p>
         ))}
       </ul>
     </Fragment>
-  )
-}
+  );
+};
 
-export default MessageList
+export default MessageList;

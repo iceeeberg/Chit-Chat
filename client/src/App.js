@@ -1,13 +1,14 @@
-import './App.css';
-import { Fragment } from 'react';
-import Messages from './components/Messages';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "./App.css";
+import Messages from "./components/Messages";
+import "bootstrap/dist/css/bootstrap.min.css";
+import UsersSideBar from "./components/UsersSideBar";
 
 function App() {
   return (
-    <Fragment>
-      <Messages/>
-    </Fragment>
+    <div className="App">
+      <UsersSideBar />
+      <Messages />
+    </div>
   );
 }
 

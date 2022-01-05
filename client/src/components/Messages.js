@@ -1,6 +1,7 @@
 import { Fragment, useState } from "react";
 import InputMessage from "./InputMessage";
 import MessageList from "./MessageList";
+import "../App.css";
 
 const Chats = () =>{
   const [userMessages, setUserMessages] = useState([]);
@@ -12,9 +13,9 @@ const Chats = () =>{
 
   return (
     <Fragment>
-      <section>
+      <div id="messages">
         <MessageList messages={userMessages}/>
-      </section>
+      </div>
       <InputMessage onAddMessage={addMessageHandler}/>
     </Fragment>
   )

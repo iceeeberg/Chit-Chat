@@ -12,9 +12,9 @@ const InputMessage = (props) => {
   return (
     <Fragment>
       <form onSubmit={submitMessageHandler}>
-        <div class="input-group mb-1 fixed-bottom">
+        <div className="input-group fixed-bottom">
           <input
-            class="form-control"
+            className="form-control"
             placeholder="Send Message..."
             id="message"
             type="text"
@@ -22,7 +22,7 @@ const InputMessage = (props) => {
             onChange={(e) => setMessage(e.target.value)}
           />
           <button
-            class="btn btn-primary"
+            className="btn btn-primary"
             onClick={submitMessageHandler}
             type="submit"
           >
