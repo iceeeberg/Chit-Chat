@@ -1,4 +1,4 @@
-package repository;
+package com.chitchat.repository;
 
 import com.chitchat.messenger.entity.Chats;
 import java.util.*;
