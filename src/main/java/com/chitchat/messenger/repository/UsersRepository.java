@@ -1,4 +1,4 @@
-package com.chitchat.repository;
+package com.chitchat.messenger.repository;
 
 import com.chitchat.messenger.entity.Users;
 
